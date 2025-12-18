@@ -11,6 +11,10 @@ const theme = createTheme({
     background: {
       default: grey[100],
     },
+    color: {
+      black: '#000000',
+      grey: grey[400],
+    },
     tabPanel: {
       backGround: {
         default: '#FFFFFF',
@@ -26,6 +30,19 @@ const theme = createTheme({
     fontFamily: "'SF Pro Text', sans-serif",
     body1: {
       fontSize: '16px',
+    },
+    weight: {
+      bold: 900,
+      standard: 400,
+    },
+    font1: {
+      fontSize: '18px',
+    },
+    font2: {
+      fontSize: '16px',
+    },
+    font3: {
+      fontSize: '14px',
     },
   },
 });

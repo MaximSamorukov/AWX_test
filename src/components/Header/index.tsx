@@ -1,11 +1,17 @@
-import React from 'react';
 import styles from './style.module.scss';
 import { Typography } from '@mui/material';
 
-export const Header = () => {
+export const Header = ({ title }: { title: string }) => {
   return (
     <div className={styles.container}>
-      <Typography sx={{ fontWeight: '600', fontSize: 18 }}>Способ вывода</Typography>
+      <Typography
+        sx={(t) => ({
+          fontWeight: t.typography.weight.bold,
+          fontSize: t.typography.font1.fontSize,
+        })}
+      >
+        {title}
+      </Typography>
     </div>
   );
 };
