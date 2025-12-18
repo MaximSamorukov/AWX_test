@@ -9,6 +9,7 @@
   font-family: 'SF Pro Text';
   line-height: 1.5;
   font-weight: 400;
+  color: black;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -26,6 +27,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #e5e5e5;
 }
 
 #root {
@@ -33,8 +35,6 @@ body {
   width: 600px;
   height: fit-content;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-  color: black;
+  padding: 0;
   border: 1px solid black;
 }
