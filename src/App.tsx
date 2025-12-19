@@ -4,15 +4,20 @@ import { CurrencySourceSelector } from '@/components/CurrencySourceSelector';
 import { Volumes } from '@/components/Volumes';
 import { CustomerInfo } from '@/components/CustomerInfo';
 import s from '@/App.module.scss';
-import { Progress } from './components/Progress';
+import { Progress } from '@/components/Progress';
+import { Wrapper } from '@/components/shared/Wrapper';
 
 function App() {
   return (
     <div className={s.container}>
-      <Header title="Способ вывода" />
+      <Wrapper>
+        <Header title="Способ вывода" />
+      </Wrapper>
       <Tabs />
       <CurrencySourceSelector />
-      <Header title="Объемы" />
+      <Wrapper>
+        <Header title="Объемы" />
+      </Wrapper>
       <Volumes />
       <Progress volume={65} />
       <CustomerInfo />
