@@ -1,26 +1,49 @@
 .container {
   flex: 1;
-  height: 80px;
+  height: 90px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
 
   &__label {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 30px;
     &_left {
       width: 100%;
-      height: 20px;
+      align-items: flex-start;
       text-align: left;
     }
     &_right {
       width: 100%;
-      height: 20px;
+      align-items: flex-end;
       text-align: right;
     }
   }
   &__panelContainer {
     width: 100%;
     flex: 1;
-    border: 1px solid red;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    padding-top: 5px;
+  }
+  &__volumeCount {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: fit-content;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }

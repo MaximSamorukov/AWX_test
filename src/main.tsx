@@ -6,6 +6,18 @@ import { ThemeProvider, CssBaseline, createTheme } from '@mui/material';
 import './index.css';
 
 const theme = createTheme({
+  components: {
+    MuiFab: {
+      styleOverrides: {
+        sizeSmall: {
+          height: 30,
+          minHeight: 30,
+          width: 30,
+          boxShadow: 'none',
+        },
+      },
+    },
+  },
   palette: {
     mode: 'light',
     background: {
@@ -43,6 +55,12 @@ const theme = createTheme({
     },
     font3: {
       fontSize: '14px',
+    },
+    font4: {
+      fontSize: '12px',
+    },
+    font5: {
+      fontSize: '10px',
     },
   },
 });

@@ -4,6 +4,7 @@ import { CurrencySourceSelector } from '@/components/CurrencySourceSelector';
 import { Volumes } from '@/components/Volumes';
 import { CustomerInfo } from '@/components/CustomerInfo';
 import s from '@/App.module.scss';
+import { Progress } from './components/Progress';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <CurrencySourceSelector />
       <Header title="Объемы" />
       <Volumes />
+      <Progress volume={65} />
       <CustomerInfo />
     </div>
   );

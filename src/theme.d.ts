@@ -41,6 +41,8 @@ declare module '@mui/material/styles' {
     font1: React.CSSProperties;
     font2: React.CSSProperties;
     font3: React.CSSProperties;
+    font4: React.CSSProperties;
+    font5: React.CSSProperties;
   }
   interface TypographyVariantsOptions {
     weight?: {
@@ -50,6 +52,8 @@ declare module '@mui/material/styles' {
     font1?: React.CSSProperties;
     font2?: React.CSSProperties;
     font3?: React.CSSProperties;
+    font4?: React.CSSProperties;
+    font5?: React.CSSProperties;
   }
 }
 
@@ -58,5 +62,7 @@ declare module '@mui/material/Typography' {
     font1: true;
     font2: true;
     font3: true;
+    font4: true;
+    font5: true;
   }
 }
