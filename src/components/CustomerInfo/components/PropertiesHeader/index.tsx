@@ -24,6 +24,7 @@ export const PropertiesHeader = ({ title }: { title: string }) => {
         }
         control={
           <Checkbox
+            defaultChecked
             slotProps={{ root: { style: { paddingRight: 5, paddingLeft: 5 } } }}
             size="small"
             checkedIcon={<CheckedIcon />}

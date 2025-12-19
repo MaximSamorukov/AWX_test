@@ -21,7 +21,7 @@ export const Item: React.FC<ItemProps> = ({ minValue, label, maxValue, currenVal
         <div style={{ width: `${doneWidthPercents}%` }} className={s.innerContainer__done} />
       </div>
       <div className={s.label}>
-        <Typography sx={(t) => ({ color: t.palette.color.grey })} variant="font3">
+        <Typography sx={(t) => ({ color: t.palette.color.grey })} variant="font4">
           {label}
         </Typography>
       </div>
