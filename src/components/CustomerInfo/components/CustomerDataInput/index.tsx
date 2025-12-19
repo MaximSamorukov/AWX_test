@@ -10,7 +10,20 @@ type CustomerDataInputProps = {
 export const CustomerDataInput: React.FC<CustomerDataInputProps> = ({ placeholder }) => {
   return (
     <div className={s.container}>
-      <InputBase fullWidth placeholder={placeholder} />
+      <InputBase
+        name="name"
+        inputProps={{
+          sx: {
+            fontSize: '20px',
+            '&::placeholder': {
+              color: 'black',
+              opacity: 1,
+            },
+          },
+        }}
+        fullWidth
+        placeholder={placeholder}
+      />
       <InputIcon />
     </div>
   );

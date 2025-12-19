@@ -17,7 +17,6 @@ export const Progress: React.FC<ProgressProps> = ({ volume }) => {
         const maxValue = maxValueDict[index];
         const minValue = minValueDict[index];
         const label = labelsDict[index];
-        console.log('volume', label, maxValue, minValue);
         return <Item minValue={minValue} maxValue={maxValue} label={label} currenValue={volume} />;
       })}
     </div>
