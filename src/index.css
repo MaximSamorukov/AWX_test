@@ -31,10 +31,22 @@ body {
 }
 
 #root {
-  max-width: 600px;
-  width: 600px;
+  max-width: 580px;
+  min-width: 320px;
+  width: 100%;
   height: fit-content;
   margin: 0 auto;
   padding: 0;
-  border: 1px solid black;
+}
+
+@media (max-width: 600px) {
+  #root {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 340px) {
+  #root {
+    padding: 0 10px;
+  }
 }

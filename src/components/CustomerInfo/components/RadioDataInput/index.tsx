@@ -8,13 +8,19 @@ export const RadioDataInput = () => {
     <div className={s.container}>
       <RadioGroup
         row
-        sx={{
+        sx={(t) => ({
           '&.MuiRadioGroup-root': {
             justifyContent: 'flex-start',
             padding: 0,
             gap: '15px',
           },
-        }}
+          [t.breakpoints.down(430)]: {
+            flexDirection: 'column',
+            gap: '5px',
+            alignItems: 'flex-start',
+            justifyContent: 'flex-start',
+          },
+        })}
         name="number_type"
       >
         <FormControlLabel value="card_number" control={<CustomRadio />} label="Номер карты" />
