@@ -1,75 +1,70 @@
-# React + TypeScript + Vite
+# 💼 AWX Test Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="center">
 
-Currently, two official plugins are available:
+![React](https://img.shields.io/badge/React-19-61dafb?style=for-the-badge&logo=react&logoColor=white)
+![Material-UI](https://img.shields.io/badge/Material--UI-5.x-007FFF?style=for-the-badge&logo=mui&logoColor=white)
+![SCSS](https://img.shields.io/badge/SCSS-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+</div>
 
-## React Compiler
+---
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## 📋 О проекте
 
-Note: This will impact Vite dev & build performances.
+Тестовое задание для позиции **Разработчик интерфейсов** в компании AWX.
 
-## Expanding the ESLint configuration
+### 👨‍💻 Автор
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+**Саморуков Максим Львович**
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 🔗 Ссылки
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- **Вакансия:** [Разработчик интерфейсов на hh.ru](https://hh.ru/vacancy/128861766?hhtmFrom=chat)
+- **Задание:** [Техническое задание](https://github.com/ShatilovaEkaterina/test-/blob/main/readme.txt)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## 🛠️ Технологический стек
+
+- **React** 19 — современная библиотека для создания пользовательских интерфейсов
+- **Material UI** — компонентная библиотека для быстрой разработки UI
+- **SCSS** — препроцессор CSS для удобной стилизации
+- **TypeScript** — типизированный JavaScript для надёжного кода
+
+---
+
+## 🚀 Установка и запуск
+
+### Установка зависимостей
+
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Запуск в режиме разработки
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev
 ```
+
+### Сборка для продакшена
+
+```bash
+npm run build
+```
+
+---
+
+## 📱 Адаптивность
+
+Проект адаптирован для экранов:
+- **Максимальная ширина:** 600px
+- **Минимальная ширина:** 320px
+
+---
+
+## 📄 Лицензия
+
+Этот проект создан в рамках тестового задания.
